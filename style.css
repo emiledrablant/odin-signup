@@ -1,3 +1,119 @@
-p {
-    color: red;
+@font-face {
+    font-family: norse-bold;
+    src: url(./Norse-Bold.otf);
 }
+
+:root {
+    --left-margin: 48px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left side */
+
+.left-side {
+    box-sizing: border-box;
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 24vh;
+    max-height: 256px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: norse-bold, Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 128px;
+}
+
+.logo img {
+    height: 128px;
+}
+
+.credit {
+    color: white;
+    align-self: center;
+    justify-self: flex-end;
+    align-content: end;
+    margin-bottom: 8px;
+}
+
+.credit a {
+    color: white;
+}
+
+/* Right side */
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    font-family: sans-serif;
+    background-color: rgb(240, 240, 240);
+    justify-content: center;
+}
+
+.emphase {
+    font-style: italic;
+}
+
+.hero-part {
+    margin: 0;
+    flex: 2;
+}
+
+.hero-part p:first-child {
+    padding-top: 64px;
+}
+
+.hero-part p:last-child {
+    padding-bottom: 16px;
+}
+
+.hero-part p {
+    max-width: 80%;
+    margin-left: var(--left-margin);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form-part {
+    flex: 3;
+}
+
+.input-part {
+    background-color: white;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    padding-left: var(--left-margin);
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inputs > div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 84px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.inputs label {
+    display: block;
+}
+
