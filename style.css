@@ -111,7 +111,7 @@ body {
     column-gap: 84px;
     row-gap: 18px;
     margin-bottom: 16px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .inputs label {
@@ -129,5 +129,41 @@ body {
 
 input:focus {
     box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: solid 1px blue;
+}
+
+input:invalid {
+    outline: none;
     border: solid 1px red;
-  }
+}
+
+.error-message {
+    margin-top: 0;
+    font-size: 0.8rem;
+    color: red;
+}
+
+#send-form {
+    background-color: #596D48;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: var(--left-margin);
+    margin-top: 24px;
+    padding: 16px 32px;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.log-in {
+    margin-top: 8px;
+    margin-left: var(--left-margin);
+}
+
+.log-in a {
+    font-weight: bold;
+    color: #596D48;
+    text-decoration: none;
+}

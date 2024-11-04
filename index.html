@@ -46,7 +46,7 @@
                 <div>
                     <div>
                       <label for="email">Email adress</label>
-                      <input type="text" id="email" />
+                      <input type="email" id="email" />
                     </div>
                     <div>
                       <label for="phone">Phone number</label>
@@ -56,17 +56,20 @@
                   <div>
                     <div>
                       <label for="password">Password</label>
-                      <input type="password" id="password" />
+                      <input type="password" id="password" required />
+                      <p class="error-message">*Password do not match</p>
                     </div>
                     <div>
                       <label for="confirm_password">Confirm password</label>
-                      <input type="password" id="confirm_password" />
+                      <input type="password" id="confirm_password" required />
                     </div>
                   </div>
               </div>
             </div>
-            fffffffffff <br><br><br><br><br>
-            ffffffffffff
+            <div>
+                <button type="submit" id="send-form">Create Account</button>
+                <p class="log-in">Already have an account? <a href="">Log in</a></p>
+              </div>
           </form>
         </div>
       </div>
